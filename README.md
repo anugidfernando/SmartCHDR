@@ -1,70 +1,157 @@
-# Getting Started with Create React App
+# SmartCHDR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**AI-Powered Web-Based Child Nutrition, Growth Monitoring and Vaccination Tracking System for Sri Lankan Parents**
 
-## Available Scripts
+SmartCHDR is a machine learning powered web application that gives parents of children aged 0–5 in Sri Lanka a personalised, continuously available tool to monitor their child's growth, understand their nutritional needs, plan meals using local Sri Lankan foods, and track vaccinations, complementing the clinic-based Child Health and Development Record (CHDR) rather than replacing it.
 
-In the project directory, you can run:
+> This is **not** a digitisation of the CHDR. Health workers continue to manage the physical CHDR during clinic visits — SmartCHDR gives parents their own intelligent tool to use at home, between visits.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Component | Description | Technique |
+|---|---|---|
+| **Growth Predictor** | Classifies growth status (normal / underweight / overweight / stunted) and predicts WHO-expected weight & height | Random Forest Classifier + Regressors |
+| **Nutrition Risk Classifier** | Flags nutrition risk (low / moderate / high) and priority nutrients | Random Forest Classifier + SMOTE |
+| **Meal Plan Recommender** | Generates a personalised 7-day Sri Lankan meal plan | Content-Based Filtering (Cosine Similarity) |
+| **Vaccination Tracker** | Tracks Sri Lanka's national EPI schedule, flags overdue/due-soon vaccines, sends reminders | Rule-Based Logic + Decision Tree |
 
-### `npm test`
+Plus: secure JWT-based authentication, multi-child profile support, and a permanent, cumulative health record per child.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Frontend:** React.js, Chart.js
+**Backend:** Python 3.12, Flask, Flask-CORS, PyJWT
+**Machine Learning:** scikit-learn, pandas, NumPy, imbalanced-learn
+**Database:** MySQL 8.0
+**Dev Tools:** VS Code, Git, Jupyter Notebook
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+```
+SmartCHDR/
+├── backend/
+│   ├── models/
+│   │   └── model_loader.py       # Loads all 4 trained ML models at startup
+│   ├── routes/
+│   │   ├── auth_routes.py
+│   │   ├── child_routes.py
+│   │   ├── growth_routes.py
+│   │   ├── meal_routes.py
+│   │   └── vaccine_routes.py
+│   ├── app.py                    # Flask entry point
+│   ├── config.py
+│   ├── utils.py
+│   └── .env
+├── ml_models/                    # Trained .pkl / .csv / .json model artefacts
+├── notebooks/                    # Dataset generation & model training notebooks
+├── datasets/                     # WHO / UNICEF / custom Sri Lankan meal datasets
+└── frontend/                     # React application
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Model Performance
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Model | Metric | Result |
+|---|---|---|
+| Model 1 — Growth Predictor | Test Accuracy / CV Mean | 95.25% / 88.22% |
+| Model 2 — Nutrition Risk Classifier | Test Accuracy / CV Mean | 92.21% / 94.17% |
+| Model 3 — Meal Recommender | Similarity Score | 0.82 – 0.88 |
+| Model 4 — Vaccination Tracker | Schedule | 11 EPI vaccines, reminders within 14 days |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
+- Python 3.12+
+- Node.js
+- MySQL 8.0
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 1. Backend Setup
 
-### Code Splitting
+```bash
+cd SmartCHDR
+python -m venv venv
+venv\Scripts\activate        # Windows
+pip install flask flask-cors scikit-learn pandas numpy mysql-connector-python python-dotenv openpyxl imbalanced-learn PyJWT
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Create a `.env` file inside `backend/`:
 
-### Analyzing the Bundle Size
+```
+FLASK_ENV=development
+FLASK_DEBUG=True
+SECRET_KEY=your_secret_key
+JWT_SECRET_KEY=your_jwt_secret
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=smartchdr
+DB_USER=root
+DB_PASSWORD=your_db_password
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Run the backend:
 
-### Making a Progressive Web App
+```bash
+cd backend
+python app.py
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The API will be available at `http://localhost:5000`.
 
-### Advanced Configuration
+### 2. Database Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Create a MySQL database named `smartchdr` with the following tables: `users`, `children`, `growth_records`, `vaccination_records`, `meal_plans`. See `/database` (or the ER diagram in the project report) for the full schema.
 
-### Deployment
+### 3. Frontend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+cd frontend
+npm install
+npm start
+```
 
-### `npm run build` fails to minify
+The app will be available at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/health` | Health check |
+| POST | `/api/auth/register` | Register a new parent account |
+| POST | `/api/auth/login` | Log in and receive a JWT |
+| POST | `/api/children` | Add a new child profile |
+| GET | `/api/children` | Get all children for the logged-in parent |
+| POST | `/api/growth/predict` | Submit a measurement, get ML predictions |
+| GET | `/api/growth/<child_id>` | Get growth history for a child |
+| POST | `/api/meals/generate` | Generate a 7-day meal plan |
+| GET | `/api/vaccines/<child_id>` | Get vaccination schedule with reminders |
+| PUT | `/api/vaccines/complete` | Mark a vaccine as completed |
+
+---
+
+## Known Limitations
+
+- Requirement evidence is based on a 13-response parent questionnaire; no interview was conducted.
+- Growth and nutrition models are trained on WHO/UNICEF reference data rather than local clinical data.
+- The custom Sri Lankan meal dataset (70 meals) limits recommendation variety over extended use.
+- Nutrition guidance currently covers undernutrition patterns only; overweight classifications do not yet return tailored dietary advice.
+
+See the final project report for the full discussion of limitations and future work.
+
+---
+
+## Author
+
+**Anugi Fernando**
+BSc (Hons) Software Engineering — Cardiff Metropolitan University (delivered via ICBT Campus, Colombo)
+Final Year Development Project, 2026
