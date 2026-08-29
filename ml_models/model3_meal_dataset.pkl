@@ -1,0 +1,71 @@
+meal_id,meal_name,meal_type,age_group_min,age_group_max,calories,protein_g,carbohydrates_g,fat_g,fiber_g,iron_mg,calcium_mg,vitamin_a_ug,vitamin_c_mg,zinc_mg,is_vegetarian,is_vegan,is_gluten_free,primary_ingredient,description
+1,Rice Porridge (Haal Paayasam),breakfast,4,60,120,2.1,25.0,1.2,0.3,0.8,20,5,0.0,0.4,1,1,1,rice,"Soft watery rice porridge, ideal first food for infants 4+ months"
+2,Kola Kanda (Green Herbal Porridge),breakfast,6,60,95,2.8,18.0,1.5,1.2,2.1,85,320,18.0,0.5,1,1,1,gotukola,Traditional Sri Lankan green porridge made with gotukola and rice
+3,Oat Porridge with Banana,breakfast,6,60,145,3.5,28.0,2.1,2.5,1.4,35,8,5.2,0.6,1,1,0,oats,Smooth oat porridge blended with ripe banana for natural sweetness
+4,Corn Flour Porridge (Iraththai Kanji),breakfast,6,60,130,2.0,27.5,1.0,0.8,0.6,18,4,0.0,0.3,1,1,1,corn flour,Light corn flour porridge suitable for young infants
+5,Mung Bean Porridge (Mung Kanji),breakfast,6,60,150,7.5,24.0,1.2,3.2,2.5,32,6,1.5,1.1,1,1,1,mung beans,"Protein-rich mung bean porridge, excellent for growth"
+6,Ragi (Kurakkan) Porridge,breakfast,6,60,155,3.8,30.0,1.5,2.8,3.0,200,0,0.0,0.9,1,1,1,ragi flour,"Finger millet porridge, exceptionally high in calcium for bone development"
+7,Banana Porridge,breakfast,4,24,105,1.2,24.0,0.5,1.8,0.4,12,10,8.5,0.2,1,1,1,banana,"Mashed ripe banana porridge, perfect first food for infants"
+8,Gotukola and Coconut Milk Porridge,breakfast,8,60,165,3.2,22.0,6.5,1.5,2.3,55,285,15.0,0.6,1,1,1,gotukola,Nutritious herbal porridge enriched with coconut milk
+9,Kiribath (Milk Rice),breakfast,8,60,210,4.2,38.5,5.1,0.8,1.2,45,12,0.0,0.9,1,0,1,rice,"Soft creamy milk rice, traditional Sri Lankan celebratory breakfast"
+10,String Hoppers (Indiappa) with Coconut Milk,breakfast,12,60,245,5.1,44.0,6.2,1.2,1.5,22,0,0.0,0.7,1,1,1,rice flour,Steamed rice flour noodle nests served with coconut milk
+11,Pittu with Coconut Milk,breakfast,12,60,255,4.8,46.0,7.0,1.5,1.3,18,0,0.0,0.8,1,1,1,rice flour,Steamed rice flour and coconut cylinders
+12,Coconut Roti (Pol Roti),breakfast,12,60,230,4.5,35.0,8.5,2.0,1.8,25,0,2.0,0.6,1,1,0,wheat flour,Flatbread made with wheat flour and fresh coconut
+13,Egg Roti,breakfast,12,60,265,9.5,33.0,10.5,1.5,2.1,42,85,1.0,1.2,1,0,0,egg,"Protein-rich flatbread with egg, great for growing children"
+14,Hopper (Appa) with Egg,breakfast,12,60,235,8.2,32.0,8.8,0.5,1.9,38,78,0.0,1.0,1,0,1,rice flour,Bowl-shaped rice flour pancake with egg in the centre
+15,Dhal (Parippu) with Rice Roti,breakfast,10,60,280,11.5,45.0,4.5,6.5,3.8,48,15,3.0,1.8,1,1,1,lentils,"Red lentil curry served with soft rice roti, high in iron and protein"
+16,Coconut Milk Semolina (Rawa) Porridge,breakfast,8,60,195,4.0,34.0,5.5,1.0,1.5,28,8,0.0,0.5,1,1,0,semolina,Smooth semolina cooked in coconut milk
+17,Rice with Dhal Curry,lunch,8,60,320,12.0,58.0,4.8,7.2,4.2,55,18,4.0,2.0,1,1,1,rice,"Steamed white rice with red lentil curry, staple Sri Lankan lunch"
+18,Rice with Fish Curry (Malu Curry),lunch,10,60,385,22.5,52.0,8.5,1.5,2.8,65,25,5.0,2.5,0,0,1,fish,"Rice with mild Sri Lankan fish curry, rich in protein and omega-3"
+19,Rice with Chicken Curry,lunch,10,60,420,28.0,50.0,10.5,1.2,2.5,42,35,6.0,3.2,0,0,1,chicken,"Rice with mild chicken curry, excellent protein source for growth"
+20,Rice with Pumpkin Curry (Wattakka),lunch,8,60,295,6.5,58.0,3.8,3.5,1.8,48,580,12.0,0.9,1,1,1,pumpkin,"Rice with pumpkin curry, extremely high in vitamin A"
+21,Rice with Spinach (Nivithi) Curry,lunch,8,60,275,8.5,52.0,3.5,4.2,5.8,120,420,28.0,1.2,1,1,1,spinach,"Rice with iron-rich spinach curry, excellent for anaemia prevention"
+22,Rice with Egg Curry,lunch,10,60,355,16.5,50.0,9.5,1.0,2.8,58,95,3.0,1.8,1,0,1,egg,"Rice with soft boiled egg curry, affordable and nutritious"
+23,Rice with Jackfruit (Polos) Curry,lunch,12,60,310,5.5,62.0,4.2,5.8,1.5,35,22,14.0,0.7,1,1,1,jackfruit,"Young jackfruit curry with rice, traditional Sri Lankan favourite"
+24,Rice with Beetroot Curry,lunch,10,60,285,6.0,57.0,3.2,4.0,2.2,32,8,6.5,0.8,1,1,1,beetroot,"Rice with sweet beetroot curry, rich in folate and iron"
+25,Rice with Carrot and Potato Curry,lunch,8,60,300,6.8,60.0,3.5,4.5,1.6,38,385,18.0,0.8,1,1,1,carrot,"Mild carrot and potato curry with rice, high in beta-carotene"
+26,Rice with Coconut Sambol and Dhal,lunch,12,60,345,10.5,55.0,9.5,5.5,3.5,42,10,8.0,1.5,1,1,1,coconut,"Rice with coconut sambol and dhal, traditional and nutritious"
+27,Mung Bean Rice (Mung Ata),lunch,10,60,330,14.5,58.0,2.5,6.8,4.5,55,5,2.0,2.2,1,1,1,mung beans,"Rice cooked with whole mung beans, high protein complete meal"
+28,Rice with Ash Plantain (Alu Kesel) Curry,lunch,10,60,295,5.2,60.0,3.8,3.5,1.2,28,15,12.0,0.6,1,1,1,plantain,Mild raw plantain curry with rice
+29,Rice with Tempered Lentils and Vegetables,lunch,8,60,315,13.0,55.0,5.2,7.5,4.8,62,95,15.0,2.0,1,1,1,lentils,Complete meal with lentils and mixed vegetables over rice
+30,Rice with Tuna (Thilapia) Curry,lunch,12,60,370,24.0,50.0,7.5,1.0,2.2,55,30,4.0,2.8,0,0,1,tuna,"Rice with mild tuna curry, excellent source of protein and omega-3"
+31,Vegetable Fried Rice,lunch,12,60,340,8.5,58.0,8.2,3.5,2.0,45,185,22.0,1.2,1,1,1,rice,"Stir fried rice with mixed vegetables, colourful and nutritious"
+32,Egg Fried Rice,lunch,12,60,385,14.5,55.0,11.0,2.5,2.5,52,95,12.0,1.8,1,0,1,egg,"Fried rice with egg and vegetables, popular children's favourite"
+33,Vegetable Soup with Rice,dinner,6,60,185,5.5,35.0,2.5,4.2,1.8,42,210,22.0,0.8,1,1,1,mixed vegetables,"Light vegetable soup with soft rice, easy to digest for dinner"
+34,Chicken Soup with Vegetables,dinner,8,60,220,18.5,18.0,6.5,3.2,2.2,38,185,18.0,2.5,0,0,1,chicken,"Nourishing chicken broth with vegetables, great for recovery"
+35,Dhal Soup (Parippu Soup),dinner,6,60,195,10.5,32.0,2.8,6.5,3.5,45,12,5.0,1.5,1,1,1,lentils,"Smooth lentil soup, light and very nutritious"
+36,Rice with Mild Vegetable Curry,dinner,8,60,265,6.2,52.0,3.8,4.5,1.8,48,155,18.0,0.9,1,1,1,mixed vegetables,Light dinner of rice with mild mixed vegetable curry
+37,Soft Rice with Fish and Vegetables,dinner,8,60,310,20.0,45.0,5.5,3.0,2.5,58,145,15.0,2.2,0,0,1,fish,Soft overcooked rice with flaked fish and vegetables
+38,Pumpkin Soup,dinner,6,60,145,3.5,28.0,2.8,3.2,1.2,38,620,16.0,0.5,1,1,1,pumpkin,"Creamy pumpkin soup, extremely high in vitamin A"
+39,String Hoppers with Dhal Curry,dinner,12,60,295,11.5,52.0,4.2,5.5,3.8,42,10,3.0,1.6,1,1,1,rice flour,String hoppers served with mild dhal curry
+40,Carrot and Potato Mash,dinner,6,24,155,3.2,32.0,2.5,4.0,1.0,32,410,20.0,0.5,1,1,1,carrot,"Smooth mashed carrot and potato, perfect for infants"
+41,Ripe Banana,snack,4,60,90,1.1,22.5,0.3,2.6,0.3,5,3,8.7,0.2,1,1,1,banana,"Fresh ripe banana, ideal first finger food and snack"
+42,Papaya (Papol),snack,6,60,55,0.6,13.5,0.2,1.8,0.3,20,950,62.0,0.1,1,1,1,papaya,"Fresh papaya, extremely rich in vitamin A and vitamin C"
+43,Mango (Amba),snack,8,60,65,0.8,16.5,0.3,1.5,0.2,11,765,36.0,0.1,1,1,1,mango,"Fresh ripe mango, high in vitamin A and antioxidants"
+44,Coconut Curd (Pol Kiri Dahi) with Jaggery,snack,8,60,145,5.5,18.0,5.8,0.0,0.5,185,25,0.5,0.8,1,0,1,coconut curd,"Traditional Sri Lankan curd with natural jaggery sweetener, high in calcium"
+45,Boiled Sweet Potato,snack,6,60,115,2.1,27.0,0.2,3.8,0.7,38,855,20.0,0.4,1,1,1,sweet potato,"Boiled sweet potato, naturally sweet and loaded with vitamin A"
+46,Boiled Jak Fruit (Kos),snack,12,60,95,1.7,23.5,0.3,1.5,0.2,24,110,6.7,0.1,1,1,1,jackfruit,"Boiled ripe jackfruit, natural and nutritious Sri Lankan snack"
+47,Coconut Milk Pudding (Watalappan Style),snack,12,60,175,5.2,22.0,7.5,0.3,1.8,65,55,0.5,0.8,1,0,1,coconut milk,Mild coconut milk and egg pudding sweetened with jaggery
+48,Boiled Chickpeas (Kadala),snack,12,60,165,8.9,27.5,2.6,7.2,2.9,49,3,1.3,1.5,1,1,1,chickpeas,"Boiled chickpeas, high in protein and iron, great finger food"
+49,Avocado Mash,snack,6,60,160,2.0,8.5,14.5,6.5,0.6,12,7,10.0,0.6,1,1,1,avocado,"Mashed avocado, rich in healthy fats essential for brain development"
+50,Milk with Ragi (Kurakkan) Ball,snack,8,60,190,6.5,30.0,4.8,2.2,3.2,295,38,0.5,0.9,1,0,1,ragi flour,"Finger millet ball served with milk, exceptionally high in calcium"
+51,Mashed Pumpkin and Rice,breakfast,6,12,115,2.5,24.0,1.2,2.0,1.0,22,520,10.0,0.4,1,1,1,pumpkin,Smooth pumpkin and rice puree for young infants 6-12 months
+52,Mashed Sweet Potato and Banana,breakfast,4,12,105,1.5,25.0,0.4,3.0,0.5,18,720,14.0,0.3,1,1,1,sweet potato,"Smooth blend of sweet potato and banana, nutritious infant puree"
+53,Mashed Fish with Rice,lunch,8,18,145,12.0,18.0,3.2,0.5,1.5,42,25,2.0,1.8,0,0,1,fish,"Finely mashed fish with soft rice, high protein infant meal"
+54,Mashed Egg Yolk with Rice,lunch,8,18,130,6.5,16.0,5.5,0.2,1.8,28,98,0.0,1.0,1,0,1,egg,"Mashed egg yolk mixed with soft rice, iron-rich infant meal"
+55,Carrot and Coconut Milk Puree,dinner,6,12,95,1.2,14.0,4.2,2.5,0.6,28,890,6.0,0.2,1,1,1,carrot,"Smooth carrot puree with coconut milk, extremely high in vitamin A"
+56,Pittu with Coconut Milk and Banana,breakfast,12,60,275,5.0,50.0,7.2,2.8,1.5,22,8,5.5,0.7,1,1,1,rice flour,Steamed pittu served with coconut milk and ripe banana
+57,Rice with Mukunuwenna Stir Fry,lunch,10,60,265,7.5,50.0,3.8,3.5,3.5,140,480,32.0,1.0,1,1,1,mukunuwenna,"Rice with stir fried mukunuwenna leaves, very high in iron and calcium"
+58,Rice with Drumstick (Murunga) Leaf Curry,lunch,10,60,270,9.5,50.0,4.2,4.0,4.2,185,775,52.0,1.2,1,1,1,moringa,"Moringa leaf curry with rice, superfood high in iron calcium and vitamins"
+59,Kiribath with Banana and Jaggery,breakfast,10,60,265,4.5,50.0,5.5,1.5,1.5,42,8,5.0,0.8,1,0,1,rice,Milk rice served with banana and natural jaggery sweetener
+60,Rice with Tempered Dhal and Coconut Sambol,dinner,12,60,335,12.5,55.0,8.5,6.5,4.0,48,8,5.0,1.8,1,1,1,lentils,Rice with tempered dhal and fresh coconut sambol
+61,Boiled Green Gram (Mung) Snack,snack,10,60,105,7.0,18.5,0.5,5.5,1.8,28,5,2.5,0.9,1,1,1,mung beans,"Simple boiled green mung beans, nutritious high protein snack"
+62,Rice with Luffa (Watakolu) Curry,dinner,10,60,255,5.8,50.0,3.2,3.8,1.5,38,55,8.0,0.7,1,1,1,luffa,"Light luffa vegetable curry with rice, easy to digest"
+63,Ripe Papaya and Curd,snack,8,60,115,4.5,18.5,2.5,1.8,0.4,145,920,58.0,0.5,1,0,1,papaya,"Fresh papaya with curd, extremely rich in vitamin A and calcium"
+64,Coconut Flour Roti with Banana,breakfast,10,60,215,3.8,35.0,7.5,4.5,1.2,18,5,6.0,0.5,1,1,1,coconut flour,Gluten free coconut flour roti with banana
+65,Rice with Sardine Curry,lunch,12,60,360,22.0,50.0,8.5,1.2,2.8,182,28,4.0,2.2,0,0,1,sardine,"Rice with sardine curry, very high in calcium from soft bones and omega-3"
+66,Gotukola Salad (Gotu Kola Sambol),snack,12,60,75,2.8,8.5,3.5,2.2,2.5,95,345,22.0,0.4,1,1,1,gotukola,"Fresh gotukola salad with coconut, traditional and very nutritious"
+67,Mashed Potato with Butter and Milk,dinner,8,24,165,4.2,28.0,5.5,2.5,0.8,55,42,12.0,0.5,1,0,1,potato,"Smooth mashed potato with milk and butter, easy to eat for toddlers"
+68,Rice with Cowpea (Barbati) Curry,lunch,12,60,305,13.5,54.0,3.5,8.5,3.8,52,18,8.0,1.8,1,1,1,cowpea,"Rice with cowpea curry, high in protein and dietary fibre"
+69,Milk Toffee Style Coconut Sweet,snack,18,60,155,2.5,25.0,5.5,1.2,0.8,55,18,0.5,0.4,1,0,1,coconut,Traditional Sri Lankan coconut sweet with milk and jaggery
+70,Rice with Mixed Vegetable Curry and Egg,lunch,12,60,395,16.5,58.0,10.2,4.5,3.2,68,215,20.0,2.2,1,0,1,egg,"Complete balanced meal with rice, vegetables and egg"

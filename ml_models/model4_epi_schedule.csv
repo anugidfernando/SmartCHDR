@@ -1,0 +1,12 @@
+vaccine_id,vaccine_name,due_months,due_label,description,is_critical
+1,BCG,0,0-4 Weeks (At Birth),Protects against Tuberculosis. Preferably within 24 hours of birth before leaving hospital.,True
+2,OPV + Pentavalent (DTP-HepB-Hib) 1st Dose,2,2 Months,"Oral Polio Vaccine + Pentavalent vaccine (Diphtheria, Tetanus, Pertussis, Hepatitis B, Haemophilus influenzae b) — 1st dose",True
+3,fIPV (Fractional IPV) 1st Dose,2,2 Months,Fractional Inactivated Polio Vaccine — 1st dose,True
+4,OPV + Pentavalent (DTP-HepB-Hib) 2nd Dose,4,4 Months,Oral Polio Vaccine + Pentavalent vaccine — 2nd dose,True
+5,fIPV (Fractional IPV) 2nd Dose,4,4 Months,Fractional Inactivated Polio Vaccine — 2nd dose,True
+6,OPV + Pentavalent (DTP-HepB-Hib) 3rd Dose,6,6 Months,Oral Polio Vaccine + Pentavalent vaccine — 3rd dose,True
+7,MMR 1st Dose,9,9 Months,"Measles, Mumps and Rubella vaccine — 1st dose",True
+8,Live JE (Japanese Encephalitis),12,12 Months,Live Japanese Encephalitis vaccine,True
+9,OPV + DTP 4th Dose,18,18 Months,Oral Polio Vaccine + DTP booster — 4th dose,True
+10,MMR 2nd Dose,36,3 Years,"Measles, Mumps and Rubella vaccine — 2nd dose",True
+11,OPV + DT 5th Dose,60,5 Years,Oral Polio Vaccine + Diphtheria/Tetanus — 5th dose booster,True

@@ -1,0 +1,90 @@
+[
+  {
+    "vaccine_id": 1,
+    "vaccine_name": "BCG",
+    "due_months": 0,
+    "due_label": "0-4 Weeks (At Birth)",
+    "description": "Protects against Tuberculosis. Preferably within 24 hours of birth before leaving hospital.",
+    "is_critical": true
+  },
+  {
+    "vaccine_id": 2,
+    "vaccine_name": "OPV + Pentavalent (DTP-HepB-Hib) 1st Dose",
+    "due_months": 2,
+    "due_label": "2 Months",
+    "description": "Oral Polio Vaccine + Pentavalent vaccine (Diphtheria, Tetanus, Pertussis, Hepatitis B, Haemophilus influenzae b) \u2014 1st dose",
+    "is_critical": true
+  },
+  {
+    "vaccine_id": 3,
+    "vaccine_name": "fIPV (Fractional IPV) 1st Dose",
+    "due_months": 2,
+    "due_label": "2 Months",
+    "description": "Fractional Inactivated Polio Vaccine \u2014 1st dose",
+    "is_critical": true
+  },
+  {
+    "vaccine_id": 4,
+    "vaccine_name": "OPV + Pentavalent (DTP-HepB-Hib) 2nd Dose",
+    "due_months": 4,
+    "due_label": "4 Months",
+    "description": "Oral Polio Vaccine + Pentavalent vaccine \u2014 2nd dose",
+    "is_critical": true
+  },
+  {
+    "vaccine_id": 5,
+    "vaccine_name": "fIPV (Fractional IPV) 2nd Dose",
+    "due_months": 4,
+    "due_label": "4 Months",
+    "description": "Fractional Inactivated Polio Vaccine \u2014 2nd dose",
+    "is_critical": true
+  },
+  {
+    "vaccine_id": 6,
+    "vaccine_name": "OPV + Pentavalent (DTP-HepB-Hib) 3rd Dose",
+    "due_months": 6,
+    "due_label": "6 Months",
+    "description": "Oral Polio Vaccine + Pentavalent vaccine \u2014 3rd dose",
+    "is_critical": true
+  },
+  {
+    "vaccine_id": 7,
+    "vaccine_name": "MMR 1st Dose",
+    "due_months": 9,
+    "due_label": "9 Months",
+    "description": "Measles, Mumps and Rubella vaccine \u2014 1st dose",
+    "is_critical": true
+  },
+  {
+    "vaccine_id": 8,
+    "vaccine_name": "Live JE (Japanese Encephalitis)",
+    "due_months": 12,
+    "due_label": "12 Months",
+    "description": "Live Japanese Encephalitis vaccine",
+    "is_critical": true
+  },
+  {
+    "vaccine_id": 9,
+    "vaccine_name": "OPV + DTP 4th Dose",
+    "due_months": 18,
+    "due_label": "18 Months",
+    "description": "Oral Polio Vaccine + DTP booster \u2014 4th dose",
+    "is_critical": true
+  },
+  {
+    "vaccine_id": 10,
+    "vaccine_name": "MMR 2nd Dose",
+    "due_months": 36,
+    "due_label": "3 Years",
+    "description": "Measles, Mumps and Rubella vaccine \u2014 2nd dose",
+    "is_critical": true
+  },
+  {
+    "vaccine_id": 11,
+    "vaccine_name": "OPV + DT 5th Dose",
+    "due_months": 60,
+    "due_label": "5 Years",
+    "description": "Oral Polio Vaccine + Diphtheria/Tetanus \u2014 5th dose booster",
+    "is_critical": true
+  }
+]
